@@ -16,15 +16,19 @@ Please modify the configuration properties as per your installations
 MONGO_DB=your mongo database, typical value by default is 'local' without quotes
 
 Cockpit server port
+
 PORT=3001
 
 Machine running mongo db
+
 MONGO_HOST=localhost
 
 Mongo db PORT
+
 MONGO_PORT=27017
 
 Mongo db protocol, don't change
+
 DATABASE=mongodb
 
 
