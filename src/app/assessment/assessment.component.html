@@ -1,0 +1,42 @@
+<div>
+  <p-dialog header="Loading assessments" [(visible)]="display" [modal]="true" [responsive]="true">
+  <p-progressSpinner></p-progressSpinner>
+  </p-dialog>
+</div>
+<h3>ASSESSMENTS</h3>
+
+<input type="file" #fileImportInput name="File Upload" id="txtFileUpload" (change)="fileChangeListener($event)" accept=".csv" />
+
+<p-table #dt [columns]="cols" [value]="assessments" [paginator]="true" [rows]="5" [tableStyle]="{'table-layout':'auto'}">
+  <ng-template pTemplate="caption">
+    <div style="text-align: right">        
+        <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+        <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+        {{col.header}}
+      </th>
+    </tr>
+    <tr>
+      <th *ngFor="let col of columns" [ngSwitch]="col.field">
+
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr [pSelectableRow]="rowData">
+      <td *ngFor="let col of columns">
+        {{rowData[col.field]}}
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<br>
+<div id="addButton">
+  <h3>Add to database : </h3>
+  <p-button label="Add Assessment" (onClick)="sendData($event)"></p-button>
+</div>
