@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "_id": "5c87723ed935d525cca6575d",
+      "name": "Create Part",
+      "description": "Creation of Part",
+      "startTime": "26-Jan-2019",
+      "endTime": "7-March-2019",
+      "executionTime": "48 Hours",
+      "jobType": "CRUD",
+      "jobTicket": "ODI000000002542",
+      "__v": 0
+  },
+  {
+      "_id": "5c877269d935d525cca6575e",
+      "name": "Update Part",
+      "description": "Updation of Part",
+      "startTime": "15-Jan-2019",
+      "endTime": "28-March-2019",
+      "executionTime": "48 Hours",
+      "jobType": "CRUD",
+      "jobTicket": "ODI000000002542",
+      "__v": 0
+  }
+ 
+  ]
+}
