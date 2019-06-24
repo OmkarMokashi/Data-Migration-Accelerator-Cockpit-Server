@@ -1,0 +1,105 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Migration DashBoard - 3DX </title>
+
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper" style="display:none">
+    <div class="sidebar-heading">CockPit </div>
+    <div class="list-group list-group-flush">
+      <a [routerLink]="['/jobs']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Jobs</a>
+      <a [routerLink]="['/progress']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Progress</a>
+      <a [routerLink]="['/assessments']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Assessment</a>
+      <a [routerLink]="['/status']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">File Status</a>
+      <a [routerLink]="['/objectstatus']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Object Status</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="welcomeElement">
+      <h1 style="text-align:center">Welcome to the Cockpit Server</h1>
+      <div style="padding: 5px">
+        <img src="../assets/Cockpit4.jpg" alt="Trulli" width="100%" height="850">
+        <br>
+        <a href="https://creativecommons.org/licenses/by/2.0/">Copyright ©</a>
+        <a href="https://www.flickr.com/photos/158652122@N02/40764885711">Sourced from Flickr under Creative Commons License</a>
+      </div>
+      <br>
+      <br>
+      <div style="padding: 50px">
+        <h2>
+          Introduction :
+        </h2>
+        <h4>
+            The cockpit server is an application for monitoring the execution of data migration jobs for extraction and loading.
+            The cockpit server displays the job execution details, job status, percentage of completion and validation details.
+            The server provides detailed information regarding the progress of the jobs for various PLM objects (Parts, Drawings, EBOM, MBOM, Documents, other types)
+        </h4>
+        <br>
+        <h4>
+          The Cockpit server has the following DashBoards :
+        </h4>
+        <a [routerLink]="['/jobs']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Jobs</a>
+        <a [routerLink]="['/progress']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Progress</a>
+        <a [routerLink]="['/assessments']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Assessment</a>
+        <a [routerLink]="['/status']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">File Status</a>
+        <a [routerLink]="['/objectstatus']" class="list-group-item list-group-item-action bg-light" (click)="removeElement('sidebar-wrapper','welcomeElement')">Object Status</a>
+        
+      </div>
+    </div>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+
+
+</body>
+
+</html>
