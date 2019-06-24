@@ -41,6 +41,6 @@ node app.js
 ## Verification
 Hit the URL
 http://cockpitserverhostname:3001
-cockpitserverhostname is the hostname of the machine running cockpit server
+cockpitserverhostname is the hostname of the machine running the cockpit server.
 
 A successful deployment will show the Cockpit Server Welcome page.
