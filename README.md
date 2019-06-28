@@ -34,9 +34,13 @@ DATABASE=mongodb
 
 ## Deployment
 Create a folder Cockpit and Clone or download the distribution to that folder,
+
 Open CMD and cd to src\app
+
 then run the command "npm install" this will take 5-10 minutes to install all the dependency files.
+
 Then run the command "ng build --watch" to let the application do continuous building. (It will show six chunks rendered which means it has done the build. It will still be running let it be if you are still doing further development).
+
 Then Run the command from the directory CockPit
 "node app.js" This will start the server up and running.
 
