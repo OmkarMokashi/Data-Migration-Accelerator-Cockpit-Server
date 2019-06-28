@@ -35,7 +35,7 @@ DATABASE=mongodb
 ## Deployment
 Create a folder Cockpit and Clone or download the distribution to that folder,
 
-Open CMD and cd to src\app
+Open command promt and cd to src\app
 
 then run the command "npm install" this will take 5-10 minutes to install all the dependency files.
 
